@@ -66,3 +66,5 @@ npm i firebase
 ㅇ firebase.js 초기화
 
 ㅇ npm run start
+
+ㅇ 확장팩 :  ES7+ React/Redux/React-Native snippet 설치
