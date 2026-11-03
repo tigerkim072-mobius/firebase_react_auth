@@ -1,1 +1,53 @@
 https://www.youtube.com/watch?v=PKwu15ldZ7k
+
+
+
+
+
+ㅇ github 리포지토리 생성
+https://github.com/tigerkim072-mobius/firebase_react_auth
+https://github.com/tigerkim072-mobius/firebase_react_auth.git
+
+
+ㅇ 파이어베이스 컨솔
+
+https://console.firebase.google.com/u/0/?hl=ko
+
+
+프로젝트 Auth-Development (개발환경)
+개발환경, 운영환경(사이트 보안, Auth-Production) 2개를 지정
+- 개발버전에서는 local을 활성화하고
+- 운영버전은 localhost를 삭제함
+
+
+ㅇ 운영환경(사이트 보안, Auth-Production) 프로젝트 생성
+- authentication 
+- 설정 > "승인된 도메인" > localhost 도메인 삭제
+
+분석기능 필요없음
+
+ㅇ 보안 > Authentication 클릭
+- 로그인방법 활성화 > 이메일 비밀번호
+
+
+ㅇ API 카 가져오기
+ㅇ 프로젝트 변경 : Auth-Development
+ㅇ 앱 등록 : auth-development
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDREl7WyfpQOahswMiTHhnrpCtgPsgNxks",
+  authDomain: "auth-development-92dc5.firebaseapp.com",
+  projectId: "auth-development-92dc5",
+  storageBucket: "auth-development-92dc5.firebasestorage.app",
+  messagingSenderId: "76258790235",
+  appId: "1:76258790235:web:1e5fae5c3263db3a35287e"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
