@@ -68,3 +68,4 @@ npm i firebase
 ㅇ npm run start
 
 ㅇ 확장팩 :  ES7+ React/Redux/React-Native snippet 설치
+ㅇ npm install bootstrap react-bootstrap
